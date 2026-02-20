@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Handbag Store Contact</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.call {
+    background: #28a745;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.location {
+    background: #007bff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Handbag Store 👜</h2>
+
+    <button class="btn call" onclick="callNow()">📞 Call Now</button>
+
+    <button class="btn whatsapp" onclick="openWhatsApp()">💬 WhatsApp</button>
+
+    <button class="btn location" onclick="openLocation()">📍 Location</button>
+</div>
+
+<script>
+function callNow() {
+    window.location.href = "tel:+919509156468";
+}
+
+function openWhatsApp() {
+    window.location.href = "https://wa.me/919509156468";
+}
+
+function openLocation() {
+    // Replace this link with your real location if needed
+    window.location.href = "https://maps.google.com";
+}
+</script>
+
+</body>
+</html>
